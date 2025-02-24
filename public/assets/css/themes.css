@@ -1,0 +1,45 @@
+:root {
+  --primary: #12151c;
+  --secondary: rgb(255, 255, 255);
+  --font: rgb(255, 255, 255);
+  --accent: rgb(0, 153, 255);
+  --sidebar-bg: #1b222c;
+  --seprator-bg: #4a4a4a91;
+  --custom-bg: none;
+}
+
+body {
+  background-image: var(--custom-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--primary);
+  color: var(--font);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, background-image 0.3s ease;
+}
+
+.sidebar {
+  background-color: var(--sidebar-bg);
+}
+
+.theme-ocean {
+  --primary: #34495e;
+  --sidebar-bg: #1f618d;
+}
+
+.theme-grass {
+  --primary: #287e3f;
+  --sidebar-bg: #16642a;
+}
+
+.theme-eyebreak {
+  --primary: #ffffff;
+  --sidebar-bg: #DBDBDB;
+}
+
+body,
+.sidebar {
+  transition: background-color 0.3s ease, background-image 0.3s ease;
+}

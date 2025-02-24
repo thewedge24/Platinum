@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/themes.css">
+    <link rel="stylesheet" href="/assets/css/settings.css">
+    <script src="/assets/js/themes.js"></script>
+    <script src="/assets/js/loader.js"></script>
+    <script src="/assets/js/settings.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="settings-container">
+        <div class="settings-card">
+          <h3>About:Blank</h3>
+          <p> Cloak the site in an about:blank page and toggle about:blank on startup (enabled by default) </p>
+          <div>
+            <label class="switch">
+              <input type="checkbox" id="abCheckbox" onchange="updateAB()">
+              <span class="slider-round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="settings-card">
+          <h3>Title and Icon</h3>
+          <input type="text" id="customTitle" placeholder="Custom Title">
+          <input type="text" id="customIcon" placeholder="Custom Icon URL">
+          <button id="save-local-storage">Save</button>
+        </div>
+        <div class="settings-card">
+          <h3>Themes</h3>
+          <p>Choose through a selection of themes!</p>
+          <select id="theme-select" class="td" onchange="themeChange(this)">
+            <option value="default">Default</option>
+            <option value="ocean">Ocean</option>
+            <option value="grass">Grass</option>
+            <option value="eyebreak">EYE BREAKER</option>
+            <option value="forest">Forest</option>
+          </select>
+          <button id="save-theme">Save</button>
+        </div>
+        <div class="settings-card">
+          <h3>Set Background Image</h3>
+          <p>Change the site's background image.</p>
+          <input type="text" id="bginput" placeholder="Enter image URL">
+          <br />
+          <button id="bgset">Save</button>
+          <button id="clear-bg">Reset</button>
+        </div>
+        <div class="settings-card">
+          <h3>Panic Key</h3>
+          <p>Quickly open another site with a single key press</p>
+          <input type="text" id="panicKey">
+          <button id="save-panic-button">Panic Key</button>
+        </div>
+        <div class="settings-card">
+          <h3>Search Engine</h3>
+          <p>Choose through a selection of search engines including the IRS!</p>
+          <select class="td" id="search-engine">
+            <option value="google">Google</option>
+            <option value="duckduckgo">DuckDuckGo</option>
+            <option value="bing">Bing</option>
+            <option value="yahoo">Yahoo</option>
+            <option value="ecosia">Ecosia</option>
+            <option value="irs">IRS</option>
+          </select>
+          <button id="save-search-engine">Save</button>
+        </div>
+        <div class="settings-card">
+          <h3>Proxy</h3>
+          <p>Choose a proxy Scramjet is in beta but some sites require Scramjet to work</p>
+          <select class="td" id="proxy">
+            <option value="uv">UV</option>
+            <option value="sj">Scramjet</option>
+            <option value="rh">Rammerhead</option>
+          </select>
+          <button id="save-proxy">Save</button>
+        </div>
+        <div class="settings-card">
+          <h3>Clickoff Cloaking</h3>
+          <p>Cloak on tab clickoff!</p>
+          <label class="switch">
+            <input type="checkbox" class="slider-checkbox" id="clickoff">
+            <span class="slider-round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/assets/js/particles.js"></script>
+  <script src="/assets/js/loader.js"></script>
+</html>

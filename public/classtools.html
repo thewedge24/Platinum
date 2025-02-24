@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Library</title>
+    <link rel="stylesheet" href="/assets/css/activities.css">
+    <link rel="stylesheet" href="/assets/css/jsonload.css">
+    <script src="/baremux/index.js"></script>
+    <script src="/epoxy/index.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <link rel="prefetch" href="/scram/scramjet.worker.js" />
+    <link rel="prefetch" href="/scram/scramjet.shared.js" />
+    <script src="/scram/scramjet.controller.js"></script>
+    <script src="/assets/js/themes.js"></script>
+    <script src="/assets/js/loader.js"></script>
+    <script src="/assets/js/hide.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <style>
+      input {
+        width: 30%;
+        /* Make inputs and buttons fit better within cards */
+        height: 50px;
+        margin-bottom: 15px;
+        /* Add spacing between inputs */
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #353535;
+        color: white;
+        border: none;
+        text-align: center;
+        box-shadow: 0px 8px 11px 0px rgba(0, 0, 0, 0.4);
+        border: 2px solid rgba(61, 61, 61, 0.308);
+        backdrop-filter: blur(4px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="appTitle">Apps</h1>
+    <form>
+      <input type="text" id="input" placeholder="Search Apps"></input>
+    </form>
+    <div class="apps"></div>
+    <script src="/scram/scramjet.controller.js"></script>
+    <script src="/assets/js/classtools.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
